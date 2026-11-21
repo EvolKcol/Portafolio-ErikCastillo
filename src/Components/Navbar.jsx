@@ -4,8 +4,17 @@ import { AppBar, Box, Button, Container, Toolbar, Typography } from '@mui/materi
 
 function Navbar() {
     return (
-        <AppBar position="static" elevation={0} sx={{ backgroundColor: 'white' }}>
-            <Container maxWidth="lg">
+        <AppBar position="static" elevation={0} 
+        sx={{ 
+            backgroundColor: '#ffffffe8',
+            borderBottom:"3px solid #ffffff3b"
+            
+        }}>
+            <Container maxWidth="lg" 
+            sx={{
+                
+                
+            }}>
                 <Toolbar disableGutters>
                     {/* Logo */}
                     <Box sx={{
@@ -16,28 +25,40 @@ function Navbar() {
                     }}>
                         <Typography variant="h6" sx={{
                             fontWeight: 'bold',
-                            color: '#F52D70',
+                            color: '#000000',
+                            fontWeight: 'bold',
                         }}>
-                            Unicorn <br/> Assembly 
+                            Unicorn Assembly 
                         </Typography>
 
                     </Box>
                     {/* Navegacion */}
                     <Box sx={{
                         display: 'flex',
-                        alinItems: 'center',
-                        gap: 1,
+                        alignItems: 'center',
+                        gap: 4,
                     }}>
-                        <Button component={Link} to="/" color="inherit" 
-                        sx={{
-                            Color: 'black',
-                            backgroundColor: '#F52D70',
-                        }}>Home</Button>
-                        <Button component={Link} to="/sobre-mi" color="inherit" sx={{ Color: '#000000' }}>Sobre Mi</Button>
-                        <Button component={Link} to="/proyectos" color="inherit" sx={{ Color: '#000000' }}>Proyectos</Button>
-                        <Button component={Link} to="/contacto" color="inherit" sx={{ Color: '#000000' }}>Contacto</Button>
+                        <Box sx={{
+                            display: 'flex',
+                            alinItems: 'center',
+                            gap: 1,
+                        }}>
+                            <Button component={Link} to="/"  
+                            sx={{
+                                color: '#ffffff',
+                                backgroundColor: '#F52D70',
+                            }}>Home</Button>
+                            <Button component={Link} to="/sobre-mi"  sx={{ color: '#000000', fontWeight: 'bold' }}>Sobre Mi</Button>
+                            <Button component={Link} to="/proyectos"  sx={{ color: '#000000', fontWeight: 'bold' }}>Proyectos</Button>
+                        
 
-                    </Box>
+                        </Box>
+                        <Box>
+                            <Button component={Link} to="/contacto" variant="contained" color="primary" sx={{ backgroundColor: '#F52D70' }}>
+                                Contacto
+                            </Button>
+                        </Box>
+                    </Box>    
                 </Toolbar>
             </Container>
         </AppBar>
