@@ -1,6 +1,7 @@
 import { Box, Button, Container, Typography } from "@mui/material"
 import { LaptopChromebook, Email } from "@mui/icons-material"
 
+
 function Hero() {
   return (
     <Box sx={{
@@ -8,6 +9,7 @@ function Hero() {
       minHeight: '520px',
       alignItems: 'center',
       backgroundColor: '#ffffff',
+      
       py: 6,
     }}>
       <Container maxWidth="lg">
@@ -61,6 +63,8 @@ function Hero() {
               <Button variant="contained"
               sx={{
                 backgroundColor: '#F52D70',
+                borderRadius:"12%",
+                textTransform:"none"
                 
               }}>
                 <Box 
@@ -78,7 +82,10 @@ function Hero() {
               <Button variant="outlined" 
               sx={{
                 color:"#000000",
-                borderColor:"#000000"
+                borderColor:"#000000",
+                borderRadius:"12%",
+                textTransform:"none",
+                
 
               }}>
                 <Box 
@@ -89,7 +96,7 @@ function Hero() {
                 }}>
                   <Email></Email>
                   <Typography>
-                    contactame
+                    Contactame
                   </Typography>
                 </Box>
 
@@ -97,6 +104,20 @@ function Hero() {
             </Box>
 
           </Box>
+          <Box
+          sx={{
+            width:"40%",
+            height:"40%"
+          }}>
+            <Box component="img" src="./fondo.png"
+            sx={{
+              width:"110%",
+              
+            }}>
+
+            </Box>
+          </Box>
+          
 
         </Box>
       </Container>
