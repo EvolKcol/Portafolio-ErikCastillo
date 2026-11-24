@@ -1,10 +1,10 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material"
 
-function SobreMi(){
+function MiSobre(){
     return(
         <Box sx={{
             display: 'flex',
-            minHeight: '520px',
+            minHeight: '380px',
             alignItems: 'center',
             backgroundColor: '#ffffff',
             py:6
@@ -12,34 +12,39 @@ function SobreMi(){
             <Container maxWidth="lg">
                 <Box sx={{
                     display:"flex",
-                    gap:5,
+                    gap:2,
+                    alignItems:"center"
 
                 }}>
                     <Box sx={{
                         width:"50%",
+                        alignItems:"start",
+                        marginRight:"20px"
                         
                     }}>
-                        <Box component="img" src="" sx={{
-                            width:"",
-                            height:""
+                        <Box component="img" src="./Doro.jpg" sx={{
+                            width:"50%",
+                            height:"30%"
                         }}>
 
                         </Box>
                     </Box>
                     <Box sx={{
-                        width:"50%"
+                        width:"100%",
+                        
+                        display:"block"
                     }}>
-                        <Typography variant="h2" sx={{
+                        <Typography variant="h3" sx={{
                             fontWeight:"bold",
-                            color:"#0000"
+                            color:"#000000f9"
                         }}>
                             Sobre mí
 
                         </Typography>
 
-                        <Typography variant="h5" sx={{
+                        <Typography variant="h6" sx={{
                             fontWeight:"bold",
-                            color:"#0000"
+                            color:"#000000"
                         }}>
                             Soy un tecnico en ensamblaje y mantenimiento de computadoras, con interes en la tecnologia y el aprendizaje continuo.
 
@@ -54,4 +59,4 @@ function SobreMi(){
     )
 }
 
-export default SobreMi
+export default MiSobre

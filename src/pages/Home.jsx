@@ -1,10 +1,12 @@
 import Hero from "../Components/Hero"
-import SobreMi from "../Components/SobreMi"
+import MiSobre from "../Components/MiSobre"
+
+
 function Home() {
   return (
     <>
       <Hero />
-      <SobreMi/>
+      <MiSobre />
 
     </>
   )

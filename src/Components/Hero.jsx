@@ -6,7 +6,7 @@ function Hero() {
   return (
     <Box sx={{
       display: 'flex',
-      minHeight: '520px',
+      minHeight: '380px',
       alignItems: 'center',
       backgroundColor: '#ffffff',
       
@@ -44,12 +44,12 @@ function Hero() {
               color:"#000000",
               
             }}>
-              Tecníco en Ensamblaje de <br/> <Typography variant="h4" sx={{color:"#F52D70", display: 'inline-block'}}>Computadoras</Typography> Personales
+              Tecníco en Ensamblaje de <Typography variant="h4" sx={{color:"#F52D70", display: 'inline-block'}}>Computadoras</Typography> Personales
             </Typography>
 
             <Typography variant="body1"
             sx={{
-              color:"#000000",
+              color:"#000000"
             }}>
               Armo, optimzo y doy mantenimiento a equipos para un mejor rendimiento y experiencia de usuario.
             </Typography>
@@ -64,7 +64,8 @@ function Hero() {
               sx={{
                 backgroundColor: '#F52D70',
                 borderRadius:"12%",
-                textTransform:"none"
+                textTransform:"none",
+                height:"50px"
                 
               }}>
                 <Box 
@@ -85,6 +86,7 @@ function Hero() {
                 borderColor:"#000000",
                 borderRadius:"12%",
                 textTransform:"none",
+                height:"50px"
                 
 
               }}>
