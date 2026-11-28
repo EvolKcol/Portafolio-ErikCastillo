@@ -8,7 +8,7 @@ function Hero() {
       display: 'flex',
       minHeight: '380px',
       alignItems: 'center',
-      backgroundColor: '#ffffff',
+      backgroundColor: '#fffffffc',
       
       py: 6,
     }}>
